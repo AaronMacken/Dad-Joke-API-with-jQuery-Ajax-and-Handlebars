@@ -1,0 +1,53 @@
+/* 
+This CSS could be broken up into a more elegant file structure,
+but due to the small size of this web page it would not be necessary
+*/
+/* ==================================== CSS RESET ============================= */
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  /* give everything inherit for box sizing, and set the body to border-box */
+  /* this makes it easier to change box-sizing properties for other things
+  if the situation ever arises */
+}
+
+html {
+  font-size: 62.5%;
+  /* Setting the base font size to 62.5%
+    this is 62.5% of the browsers default font size - 16px
+    thus making our base font size 10px and making it easy to use rem for all children measurements
+    This is a good practice to do incase users change the default font size. Very flexible */
+}
+
+body {
+  /* Set all fonts in the body */
+  box-sizing: border-box;
+  font-family: sans-serif;
+  font-weight: 400;
+  line-height: 1.7;
+  margin: 5rem;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+}
+
+.title{
+    font-size: 3rem;
+}
+
+.btn {
+    font-size: 1.5rem;
+    align-self: flex-end;
+}
+
+table {
+  font-size: 1.25rem;
+}
+
+thead > tr > th {
+  border-top: none !important;
+}
